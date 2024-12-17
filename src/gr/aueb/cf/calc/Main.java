@@ -13,4 +13,13 @@ public class Main {
         return a-b;
     }
 
+
+    public static int div (int a, int b)  {
+        try {
+            return a/b;
+        } catch (ArithmeticException e) {
+            System.err.println("Error");
+            throw e;
+        }
+    }
 }
